@@ -4,6 +4,11 @@ Frontend for the **Neat Spot** cleaning service management system. Built using *
 
 ---
 
+## 🔗 Live Demo Links
+- 🌐 Frontend (Netlify):  https://neat-spot.netlify.app
+- 🔗 Backend API (Vercel):  https://neat-spot-api.vercel.app
+
+
 ## 🚀 Tech Stack
 
 * **React 19** – UI framework
