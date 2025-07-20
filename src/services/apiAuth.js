@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://neat-spot-nsapi.vercel.app";
+const API_BASE_URL = "https://neat-spot-api.vercel.app";
 
 function handleError(error) {
   throw new Error(
