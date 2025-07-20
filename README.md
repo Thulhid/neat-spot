@@ -1,12 +1,102 @@
-# React + Vite
+# 📘 Neat Spot Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for the **Neat Spot** cleaning service management system. Built using **React**, **Vite**, **Tailwind CSS**, and **TanStack React Query**, it supports booking features, authentication, protected routing, and admin functionalities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+* **React 19** – UI framework
+* **Vite** – Fast dev server and build tool
+* **Tailwind CSS 4** – Utility-first styling
+* **React Router v7** – Routing system
+* **TanStack React Query v5** – Server-state management
+* **React Hook Form** – Form handling
+* **Yup** – Schema validation
+* **React Hot Toast** – Toast notifications
+* **Axios** – HTTP requests
+* **Date-fns** – Date utility library
+* **Compound Components** – For Modal, Menus, and Table UI components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+```bash
+/src
+├── features
+│   ├── authentication         # Login, Signup, useUser, useLogin
+│   ├── dashboard              # Customer features (booking table, hooks)
+│   └── admin
+│       └── dashboard          # Admin features (admin bookings, services)
+├── hooks                      # Custom hooks (e.g., useOutsideClick)
+├── pages                      # Pages like Login, Signup, Dashboard, AdminDashboard
+├── services                   # Axios API functions
+├── ui                         # Reusable UI components (Modal, Table, Button, etc.)
+└── App.jsx                    # Main entry with routing
+```
+
+---
+
+## 🔐 Auth & Protected Routes
+
+* **JWT-based authentication** (stored in cookies)
+* **Role-based routing**: Only admins can access `/admin/*` routes
+* `ProtectedRoute` component protects main app layout
+
+---
+
+## ✨ Reusability & Patterns
+
+* Compound component pattern: `Modal`, `Menus`, and `Table`
+* Reusable hooks: `useLogin`, `useUser`, `useBookings`, `useCreateService`, etc.
+* Clean separation of customer vs admin features
+* `react-query` used for caching and refetching data across the app
+
+---
+
+## 🛠️ Scripts
+
+```bash
+npm run dev       # Start development server
+npm run build     # Build for production
+npm run preview   # Preview built app
+npm run lint      # Run eslint
+```
+
+---
+
+## 🔐 Demo Admin Credentials (For Testing Only)
+
+* **Username**: `admin`
+* **Password**: `admin1234`
+---
+
+## 📦 Install & Setup
+
+1. Clone the repo
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the dev server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Notes
+
+* This project is connected to a real backend built with Node.js, Express, and MongoDB.
+* Remember to run the backend before using the frontend.
+* Make sure CORS and credentials (`withCredentials: true`) are properly configured.
+
+---
+
+## 🙌 Author
+
+Built with ❤️ by [Hiruna Thulhid](https://github.com/thulhid).
