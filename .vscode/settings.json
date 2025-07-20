@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#40243F",
+    "titleBar.activeBackground": "#5A3258",
+    "titleBar.activeForeground": "#FCF9FC"
+  },
+  "cSpell.words": ["VITE"]
+}
