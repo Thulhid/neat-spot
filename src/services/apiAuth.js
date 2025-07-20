@@ -10,7 +10,13 @@ function handleError(error) {
 
 export async function login(payload) {
   try {
-    const res = await axios.post(`${API_BASE_URL}/api/v1/users/login`, payload);
+    const res = await axios.post(
+      `${API_BASE_URL}/api/v1/users/login`,
+      payload,
+      {
+        withCredentials: true,
+      },
+    );
     return res.data;
   } catch (error) {
     handleError(error);
@@ -32,6 +38,9 @@ export async function signup(payload) {
     const res = await axios.post(
       `${API_BASE_URL}/api/v1/users/signup`,
       payload,
+      {
+        withCredentials: true,
+      },
     );
     return res.data;
   } catch (error) {
