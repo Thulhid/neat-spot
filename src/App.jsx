@@ -63,7 +63,7 @@ function App() {
             },
 
             success: {
-              className: "dark:!bg-sky-700 !text-slate-700 !bg-white",
+              className: "!text-slate-700 !bg-white",
               duration: 3000,
               iconTheme: {
                 primary: "var(--toast-icon-success-primary)",

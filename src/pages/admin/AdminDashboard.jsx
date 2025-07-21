@@ -14,11 +14,7 @@ function AdminDashboard() {
         Admin Dashboard
       </h1>
 
-      {isPending && (
-        <p className="ml-4 text-slate-500 dark:text-slate-400">
-          Loading bookings...
-        </p>
-      )}
+      {isPending && <p className="ml-4 text-slate-500">Loading bookings...</p>}
       <Modal>
         <Modal.Open opens="create-service">
           <Button variant="primary" configStyles="ml-auto my-5">

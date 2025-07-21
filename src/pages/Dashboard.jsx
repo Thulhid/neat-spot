@@ -20,11 +20,7 @@ function Dashboard() {
           Create New Booking
         </Link>
       </div>
-      {isPending && (
-        <p className="ml-4 text-slate-500 dark:text-slate-400">
-          Loading bookings...
-        </p>
-      )}
+      {isPending && <p className="ml-4 text-slate-500">Loading bookings...</p>}
 
       {!isPending && bookings.length === 0 && <Empty resourceName="Bookings" />}
       {!isPending && bookings.length !== 0 && (

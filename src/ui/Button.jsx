@@ -12,20 +12,20 @@ function Button({
   const styles = {
     primary:
       base +
-      " bg-sky-500  text-sky-50 hover:brightness-105  font-semibold  p-1.5 shadow-md dark:bg-sky-600",
+      " bg-sky-500  text-sky-50 hover:brightness-105  font-semibold  p-1.5 shadow-md",
     secondary:
       base +
-      " border text-slate-800 font-semibold p-1.5 active:bg-slate-200 dark:text-sky-50",
+      " border text-slate-800 font-semibold p-1.5 active:bg-slate-200",
     small:
       base +
-      " text-slate-800 hover:bg-sky-100 w-full p-0.5 sm:p-1.5 text-sm dark:hover:bg-sky-900 dark:text-sky-50",
+      " text-slate-800 hover:bg-sky-100 w-full p-0.5 sm:p-1.5 text-sm",
     danger:
       base +
       " text-red-50 bg-red-700 p-2 font-semibold text-sm hover:brightness-105",
 
     header:
       base +
-      " text-slate-800 hover:bg-sky-100 w-full p-0.5 sm:p-1 text-sm dark:hover:bg-sky-900 dark:text-sky-50",
+      " text-slate-800 hover:bg-sky-100 w-full p-0.5 sm:p-1 text-sm",
   };
 
   //border border-sky-600

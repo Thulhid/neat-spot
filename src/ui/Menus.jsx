@@ -43,10 +43,7 @@ function Toggle({ id }) {
       onClick={handleClick}
       className="w-fit focus:rounded focus:ring focus:ring-sky-400"
     >
-      <HiEllipsisVertical
-        size={25}
-        className="cursor-pointer text-slate-600 dark:text-slate-300"
-      />
+      <HiEllipsisVertical size={25} className="cursor-pointer text-slate-600" />
     </button>
   );
 }
@@ -57,7 +54,7 @@ function List({ id, children }) {
   return createPortal(
     <ul
       style={{ top: `${position.y}px`, right: `${position.x}px` }}
-      className="fixed rounded border border-slate-400 bg-slate-100 dark:bg-sky-700"
+      className="fixed rounded border border-slate-400 bg-slate-100"
       ref={ref}
     >
       {children}

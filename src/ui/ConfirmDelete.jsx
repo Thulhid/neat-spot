@@ -4,10 +4,8 @@ import Button from "./Button";
 function ConfirmDelete({ onCloseModal, disabled, onConfirm, resource }) {
   return (
     <div>
-      <h2 className="text-md font-semibold md:text-2xl dark:text-slate-100">
-        Cancel {resource}
-      </h2>
-      <p className="my-5 flex w-xs items-center justify-center rounded-md border-2 border-red-700 bg-red-200 p-2 pl-5 text-[12px] font-semibold text-slate-800 sm:my-10 sm:h-20 sm:w-auto sm:rounded-2xl sm:px-12 sm:text-sm dark:border-red-400 dark:bg-red-800 dark:text-red-50">
+      <h2 className="text-md font-semibold md:text-2xl">Cancel {resource}</h2>
+      <p className="my-5 flex w-xs items-center justify-center rounded-md border-2 border-red-700 bg-red-200 p-2 pl-5 text-[12px] font-semibold text-slate-800 sm:my-10 sm:h-20 sm:w-auto sm:rounded-2xl sm:px-12 sm:text-sm">
         Are you sure you want to Cancel this {resource} permanently? This action
         cannot be undone.
       </p>

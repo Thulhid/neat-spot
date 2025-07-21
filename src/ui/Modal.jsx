@@ -31,9 +31,9 @@ function Window({ children, name }) {
     <div className="fixed top-0 left-0 z-1003 h-dvh w-full overflow-auto bg-slate-50/10 backdrop-blur-xs">
       <div
         ref={ref}
-        className="xl:px-10px fixed top-1/2 left-1/2 w-85 -translate-x-1/2 -translate-y-1/2 transform rounded border border-slate-400 bg-sky-100 px-2 py-5 shadow-2xl shadow-slate-400 transition-all duration-300 sm:w-auto md:px-5 dark:bg-sky-700 dark:shadow-sky-950"
+        className="xl:px-10px fixed top-1/2 left-1/2 w-85 -translate-x-1/2 -translate-y-1/2 transform rounded border border-slate-400 bg-sky-100 px-2 py-5 shadow-2xl shadow-slate-400 transition-all duration-300 sm:w-auto md:px-5"
       >
-        <button onClick={close} className="cursor-pointer dark:text-slate-300">
+        <button onClick={close} className="cursor-pointer">
           <HiXMark />
         </button>
 
