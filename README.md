@@ -4,6 +4,11 @@ Frontend for the **Neat Spot** cleaning service management system. Built using *
 
 ---
 
+## 🔗 Live Demo Links
+- 🌐 Frontend (Netlify):  https://neat-spot.netlify.app
+- 🔗 Backend API (Vercel):  https://neat-spot-api.vercel.app
+
+
 ## 🚀 Tech Stack
 
 * **React 19** – UI framework
@@ -27,12 +32,14 @@ Frontend for the **Neat Spot** cleaning service management system. Built using *
 ├── features
 │   ├── authentication         # Login, Signup, useUser, useLogin
 │   ├── dashboard              # Customer features (booking table, hooks)
+    ├── create-booking         # Customer features (create new booking )
 │   └── admin
 │       └── dashboard          # Admin features (admin bookings, services)
-├── hooks                      # Custom hooks (e.g., useOutsideClick)
+├── hooks                      # Custom hooks (commonly use - e.g., useOutsideClick)
 ├── pages                      # Pages like Login, Signup, Dashboard, AdminDashboard
 ├── services                   # Axios API functions
 ├── ui                         # Reusable UI components (Modal, Table, Button, etc.)
+├── utils                      # helper functions (validationSchema)
 └── App.jsx                    # Main entry with routing
 ```
 
@@ -69,7 +76,7 @@ npm run lint      # Run eslint
 ## 🔐 Demo Admin Credentials (For Testing Only)
 
 * **Username**: `admin`
-* **Password**: `admin1234`
+* **Password**: `11111111`
 ---
 
 ## 📦 Install & Setup
